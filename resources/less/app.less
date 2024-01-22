@@ -1,5 +1,72 @@
-@import url('./libs/main.less'); // Global styles (like: h1,a,button)
-@import url('./libs/header.less'); // Header
-@import url('./libs/footer.less'); // Footer
-@import url('./libs/style.less'); // Main Styles
-@import url('./libs/media.less'); // Media adaptable styles
+@tailwind utilities;
+.volyavet-title {
+    color: #D1FDFF;
+    font-family: 'Vienna Poster' !important;
+
+    &.black {
+        color: #212c53;
+    }
+}
+
+.whenSection__item {
+    &.hidden-on-mobile {
+        display: none;
+    }
+}
+.whenSection__allButton {
+    &.hidden-on-desktop {
+
+        display: none;
+    }
+}
+.sap__button {
+    padding: 14px;
+    background: #3d4c87;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d1fdff;
+    border: 2px solid #2b3763;
+    cursor:pointer;
+
+    &:hover {
+        border: 2px solid #D1FDFF;
+        transition: all 0.2s;
+        color: #D1FDFF;
+        font-weight: bold;
+    }
+    &.active {
+        border: 2px solid #D1FDFF;
+        transition: all 0.2s;
+        color: #D1FDFF;
+        font-weight: bold;
+    }
+}
+
+span {
+    &.hr {
+        border: 2px solid #64C1C6;
+    }
+}
+@import "./lib/media.less";
+@import "./lib/card.less";
+@import "./lib/register.less";
+@import "./lib/team_card.less";
+@import "./lib/feedback.less";
+@import "./lib/header.less";
+@import "./lib/aboutUsCard.less";
+@import "./lib/footer.less";
+@import "./lib/new-headerline.less";
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+.slider .slick-dots li {
+    margin: 0 6px;
+}
+
+
+

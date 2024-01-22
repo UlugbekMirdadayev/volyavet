@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /404
+User-agent: *
+Disallow: /admin/*
+User-agent: *
+Disallow: /admin
