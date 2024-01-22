@@ -1,0 +1,140 @@
+.footer {
+    background: #212c53;
+    padding: 50px 0;
+    color: #f8f8f8
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+.footer__col {
+    width: auto!important;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px
+}
+
+.footer__col .text {
+    line-height: 30px
+}
+
+.footer__link {
+    position: relative;
+    padding-left: 33px;
+    display: block;
+    line-height: 30px;
+    max-width: 180px;
+    margin: 0 auto
+}
+
+.footer__icon {
+    position: absolute;
+    left: 0;
+    top: 5px
+}
+
+.footer__colOfferta {
+    display: flex;
+    justify-content: center
+}
+
+.footer__colOfferta a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.footer__colArrow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.footer__devLink {
+    color: #d1fdff;
+    text-decoration: underline
+}
+
+.footer__colRights-desctop {
+    display: none
+}
+
+.footer__colRights-mobile {
+    display: block
+}
+
+.footer__socLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 20px
+}
+
+.footer__arrowTop {
+    width: 100%
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding:35px;
+    }
+
+    .footer__row {
+        flex-direction: row
+    }
+
+    .footer__col {
+        width: 33%
+    }
+
+    .footer__colArrow {
+        flex-wrap: nowrap
+    }
+
+    .footer__colRights-desctop {
+        display: block
+    }
+
+    .footer__colRights-mobile {
+        display: none
+    }
+
+    .footer__arrowTop,.footer__socLinks {
+        width: initial
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer__row {
+        flex-direction:row;
+        flex-wrap: nowrap;
+        gap: 15px
+    }
+
+    .footer__link {
+        max-width: initial
+    }
+
+    .footer__col {
+        width: 20%;
+        text-align: left
+    }
+}
+
+.link {
+    font-size: 14px;
+    line-height: 19px;
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
