@@ -1,0 +1,57 @@
+
+.GuestLayout {
+    &.content {
+        display: inline;
+
+        .CardLayout {
+            background: none;
+            box-shadow: none;
+            margin: 0;
+            padding: 0 1rem;
+        }
+    }
+
+    .GuestInformation { // mb can take this part for use globally class
+        h1 {
+            color: @mColor;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-style: normal;
+            line-height: normal;
+            color: @mColor;
+        }
+    }
+
+    .CardLayout {
+        background: @cardBg;
+        border-radius: @defRadius;
+        padding: 35px 31px;
+    }
+}
+
+.TitlePage {
+    @media (min-width: 768px) {
+        margin: 0 3rem;
+    }
+    &.AuthPage {
+        align-self: flex-start;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+
+    h1 {
+        @media (min-width: 768px) {
+        @apply text-4xl;
+        }
+        @apply uppercase;
+        @apply font-semibold;
+        @apply text-xl;
+    }
+}

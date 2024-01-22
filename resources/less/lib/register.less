@@ -1,0 +1,206 @@
+.registerFrame {
+    position: fixed;
+    cursor: pointer;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 100;
+
+    -ms-overflow-y: auto;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    visibility: hidden;
+    opacity: 0.2;
+    transition: visibility 0s, opacity 0.5s linear;
+
+    flex-direction: column;
+    justify-content: center;
+
+    .content {
+        @media (max-width: 425px) {
+                    width: calc(100% - 27px)!important;
+        }
+        position: relative;
+
+        display: flex;
+        opacity: 1;
+        margin: 0 auto;
+        width: 548px;
+        height: 700px;
+
+        background: #212C53;
+        border-radius: 15px;
+
+        .decoration {
+            margin-top: 48px;
+            text-align: center;
+            position: relative;
+            width: 110px;
+            height: 100%;
+        }
+        .form {
+            svg.exit {
+                position: absolute;
+                top: 22px;
+                right: 25px;
+            }
+            .success {
+                margin-top: 35px;
+                width: 350px;
+                @media (max-width: 425px) {
+                    width: 100%!important;
+                }
+                p {
+                    margin-top: 20px;
+                }
+                button {
+                    font-family: gothampro;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    width: 246px;
+                    height: 56px;
+                    color: #D1FDFF;
+                    cursor: pointer;
+                    background: rgba(209, 253, 255, 0.3);
+                    border: 2px solid #D1FDFF;
+                    border-radius: 7px;
+                    @media (max-width: 425px) {
+                        width: 100%!important;
+                    }
+                }
+                img {
+                    object-fit: cover;
+                    border-top-right-radius: 112px!important;
+                    border-radius: 6px;
+                    margin-top: 20px;
+                    //width: 246px !important;
+                    height: 246px;
+                    @media (max-width: 425px) {
+                        width: 100%!important;
+                        height: 285px !important;
+                    }
+                }
+                position: absolute;
+                top: 0;
+                visibility: hidden;
+                h1 {
+                    font-size: 31px;
+                }
+            }
+            .inp {
+                @media (max-width: 425px) {
+                    display: flex;
+                    width: 100%!important;
+                    height: 100%!important;
+                    flex-direction: column;
+                }
+                h1 {
+                    //font-size: 31px;
+                    font-size: 25px;
+                    text-align: start;
+                }
+                position: relative;
+                display: block;
+                padding-top: 50px;
+                width: 350px;
+                .title {
+                    @media (max-width:425px) {
+                        max-width: 82%;
+                    }
+                }
+                input, select {
+                    width: 350px;
+                    height: 50px;
+                    margin-top: 15px;
+                    background: rgba(198, 212, 211, 0.05);
+                    border: 1px solid #D1FDFF;
+                    border-radius: 5px;
+                    padding-left: 15px;
+                    color: #C6D4D3;
+                    display: block;
+                    outline: none;
+                    font-size: 14px;
+                    @media (max-width: 425px) {
+                        width: 100%!important;
+                    }
+                }
+
+                select {
+                    padding: 15px;
+                    color: #C6D4D3;
+                    position: relative;
+                    cursor: pointer;
+
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-image: url('data:image/svg+xml;utf8,<svg fill="grey" width="14" height="8" xmlns="http://www.w3.org/2000/svg"><path d="M13.36.585c.35.34.35.902 0 1.242L7.696 7.324a1 1 0 01-1.392 0L.64 1.827A.865.865 0 011.845.585l4.459 4.327a1 1 0 001.392 0L12.155.585a.865.865 0 011.205 0z"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position-x: 96%;
+                    background-position-y: 22px;
+
+                    @media (max-width: 768px) {
+                        width: 277px;
+                    }
+                }
+
+                textarea {
+                    padding-top: 10px;
+                    margin-top: 15px;
+                    width: 350px;
+                    height: 112px;
+                    background: rgba(198, 212, 211, 0.05);
+                    border: 1px solid #D1FDFF;
+                    border-radius: 5px;
+                    padding-left: 15px;
+                    color: #C6D4D3;
+                    display: block;
+                    outline: none;
+                    font-size:14px;
+                    @media (max-width: 425px) {
+                        width: 100%!important;
+                    }
+                }
+
+                .bot {
+                    color: #BCCED0;
+                    margin-top: 20px;
+                }
+
+                button {
+                    font-family: gothampro;
+                    font-weight: 700;
+                    font-size: 16px;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    width: 350px;
+                    height: 56px;
+
+                    background: rgba(209, 253, 255, 0.3);
+                    border: 2px solid #D1FDFF;
+                    border-radius: 7px;
+
+                    font-size: 16px;
+                    color: #D1FDFF;
+                    @media (max-width: 425px) {
+                        width: 100%!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .registerFrame .content .form .inp h1 {
+        font-size: 31px;
+    }
+}
+
+
+
